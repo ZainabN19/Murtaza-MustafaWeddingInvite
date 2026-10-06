@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Mustafa &amp; Mariya · Murtaza &amp; Lubaina</title>
+
+  <meta name="theme-color" content="#57736a">
+
+  <!-- Link preview (WhatsApp, iMessage…). After hosting, change this to the full https:// address of images/envelope.png -->
+  <meta property="og:title" content="You're invited to a wedding.">
+  <meta property="og:description" content="Tap the seal to open your invitation.">
+  <meta property="og:image" content="images/envelope.png">
+
+  <link rel="preload" as="image" href="images/envelope.png">
+  <link rel="preload" as="image" href="images/seal.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&family=Amiri:ital@0;1&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=lanterns-2">
+</head>
+<body>
+
+  <!-- ============ THE LETTER (full page, scrolls inside) ============ -->
+  <main class="letter" id="letter" tabindex="-1">
+
+    <!-- ---- Page 1: the invitation proper (your card design) ---- -->
+    <article class="paper paper--image">
+      <div class="page-monogram-pair">
+        <img src="images/mandm.png" alt="Mustafa and Mariya monogram" width="277" height="315">
+        <img src="images/mandl.png" alt="Murtaza and Lubaina monogram" width="232" height="366">
+      </div>
+      <img class="page-bismillah" src="images/bismillah.png" alt="Bismillah ir-Rahman ir-Rahim" width="400" height="160">
+      <p class="opening-blessing">By the Grace of Allah, Vasilat-e-Panjatan Pak (A.S.) Janab-e-Abbas (A.S.) and with the Dua Mubarak of Syedna Ali Qadr Mufaddal Saifuddin (T.U.S.)</p>
+      <div class="opening-family">
+        <p class="family-blessing">With Love &amp; Blessings of</p>
+        <p class="family-names"><span>Mr. Saifuddin Dhariwala</span> and <span>Late Mrs. Fizza Dhariwala</span><br><span>Late Mr. Hatim Kapadia</span> and <span>Late Mrs. Sharifa Kapadia</span></p>
+      </div>
+      <div class="hosts-invitation">
+        <p class="family-hosts">Mr. Juzer &amp; Mrs. Samina <span>Dhariwala</span></p>
+        <p class="family-invitation">invite your gracious presence and blessings to celebrate the wedding of their sons</p>
+      </div>
+      <div class="couple-announcements">
+        <section class="couple-announcement" aria-label="Mustafa and Mariya">
+          <p class="announcement-names">Mustafa <span>with</span> Mariya</p>
+          <p class="announcement-family"><span class="daughter-of">Daughter of</span> Mr. Murtaza &amp; Farida Rajkotwala</p>
+        </section>
+        <p class="couple-and"><span>and</span></p>
+        <section class="couple-announcement" aria-label="Murtaza and Lubaina">
+          <p class="announcement-names">Murtaza <span>with</span> Lubaina</p>
+          <p class="announcement-family"><span class="daughter-of">Daughter of</span> Mr. Yusuf &amp; Tasneem Fansuwala</p>
+        </section>
+      </div>
+      <button class="celebration-link" id="celebrationLink" type="button">
+        <span>Scroll to see our celebration days</span>
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 4v14m0 0-6-6m6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </article>
+
+    <!-- ---- Page 2: the calendar ---- -->
+    <section class="paper calendar-page" id="calendarSection" aria-label="Wedding calendar">
+
+      <p class="intro">Our Days of Celebration</p>
+      <h2 class="cal-title">November 2026</h2>
+      <p class="cal-sub">Tap a marked date to open that invitation</p>
+
+      <div class="calendar" role="grid" aria-label="November 2026">
+        <div class="cal-weekdays" role="row">
+          <span role="columnheader">Su</span><span role="columnheader">Mo</span><span role="columnheader">Tu</span>
+          <span role="columnheader">We</span><span role="columnheader">Th</span><span role="columnheader">Fr</span><span role="columnheader">Sa</span>
+        </div>
+        <div class="cal-grid" role="rowgroup" id="calGrid">
+          <!-- filled by script.js -->
+        </div>
+      </div>
+
+      <ul class="legend">
+        <li hidden><button class="legend-btn" data-event="majlis"><span class="dot"></span>20th — Majlis</button></li>
+        <li hidden><button class="legend-btn" data-event="mehndi"><span class="dot"></span>23rd — Mehendi</button></li>
+        <li><button class="legend-btn" data-event="reception"><span class="dot"></span>26th — Reception</button></li>
+      </ul>
+      <section class="closing-note" aria-label="Compliments and RSVP">
+        <div class="closing-divider" aria-hidden="true"></div>
+        <img class="closing-monogram" src="images/monogram.png" alt="Wedding monogram for Mustafa, Mariya, Murtaza, and Lubaina" width="450" height="331">
+        <div class="closing-compliments">
+          <p class="compliments-title">With Best Compliments From</p>
+          <p>Dhariwala and family</p>
+          <p>Kapadia and family</p>
+        </div>
+        <p class="closing-romance">Two families, four hearts, one beautiful beginning. It would mean the world to celebrate it with you.</p>
+        <div class="closing-rsvp">
+          <h2>Kindly RSVP</h2>
+          <p>Please let us know if you will be joining us in this celebration.</p>
+          <a class="rsvp-button" href="https://docs.google.com/forms/d/e/1FAIpQLSeReLZ8HrxY32_xM6urY8RpnNMOFHSHpE87EqS9NHKkzzv5Qg/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">RSVP Here</a>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <!-- ============ Per-event invite, opens over the top ============ -->
+  <div class="modal" id="eventModal" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" type="button" aria-label="Close">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+      <div class="modal-invite-wrap">
+        <img class="modal-card-image" id="modalImage" src="" alt="" width="1240" height="1748">
+        <a class="modal-location-link" id="modalLocation" href="#" target="_blank" rel="noopener noreferrer" aria-label="Open event location in Google Maps"></a>
+      </div>
+      <h3 class="sr-only" id="modalTitle"></h3>
+    </div>
+  </div>
+
+  <!-- ============ THE ENVELOPE (covers the page until opened) ============ -->
+  <div class="envelope" id="envelope">
+    <div class="stage">
+      <div class="flap flap--bottom"></div>
+      <div class="flap flap--left"></div>
+      <div class="flap flap--right"></div>
+      <div class="flap flap--top"></div>
+      <img class="opening-butterfly" src="images/butterfly.svg" alt="" aria-hidden="true">
+
+      <button class="seal" id="seal" type="button" aria-label="Open the invitation">
+        <img src="images/seal.png" alt="" width="446" height="449">
+      </button>
+      <p class="envelope-date">26 . NOV . 2026</p>
+      <p class="hint">Tap the seal to open</p>
+    </div>
+  </div>
+
+  <audio id="bgMusic" src="audio/music.mp3" loop preload="auto" playsinline></audio>
+  <button id="musicToggle" class="music-toggle" type="button" aria-label="Mute music">♫</button>
+
+  <script src="script.js?v=lanterns-2"></script>
+</body>
+</html>
