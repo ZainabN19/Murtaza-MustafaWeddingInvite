@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150" fill="none">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="150" y2="150" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6a4a14"/>
+      <stop offset="0.22" stop-color="#b98f2e"/>
+      <stop offset="0.42" stop-color="#8a6518"/>
+      <stop offset="0.6" stop-color="#c39a38"/>
+      <stop offset="0.8" stop-color="#80600f"/>
+      <stop offset="1" stop-color="#6a4a14"/>
+    </linearGradient>
+  </defs>
+  <!-- outer line with scooped corners -->
+  <path d="M26 4H124A22 22 0 0 0 146 26V124A22 22 0 0 0 124 146H26A22 22 0 0 0 4 124V26A22 22 0 0 0 26 4Z" stroke="url(#g)" stroke-width="3.2"/>
+  <!-- inner hairline, following the same scoop -->
+  <path d="M31.35 10H118.65A28 28 0 0 0 140 31.35V118.65A28 28 0 0 0 118.65 140H31.35A28 28 0 0 0 10 118.65V31.35A28 28 0 0 0 31.35 10Z" stroke="url(#g)" stroke-width="1.5"/>
+  <!-- a small gold bead tucked into each corner scoop -->
+  <g fill="url(#g)">
+    <circle cx="12.5" cy="12.5" r="4"/>
+    <circle cx="137.5" cy="12.5" r="4"/>
+    <circle cx="12.5" cy="137.5" r="4"/>
+    <circle cx="137.5" cy="137.5" r="4"/>
+  </g>
+</svg>
